@@ -2,7 +2,7 @@ package trello.pages;
 
 import org.openqa.selenium.By;
 
-import static trello2.core.BrowserFactory.driver;
+import static trello.core.BrowserFactory.driver;
 
 public class LoginPage extends BasePage {
 
@@ -18,10 +18,10 @@ public class LoginPage extends BasePage {
         typeText(emailBy, email);
         typeText(pswdBy, pswd);
         click(submitBy);
+        isElementPresent(homeBy);
     }
 
     public boolean isLoggedOut() {
         return driver.getCurrentUrl().contains("logged-out");
     }
-
 }

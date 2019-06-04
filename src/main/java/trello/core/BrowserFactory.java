@@ -1,4 +1,4 @@
-package trello2.core;
+package trello.core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

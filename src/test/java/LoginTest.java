@@ -1,6 +1,6 @@
-import trello2.core.BrowserFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import trello.core.BrowserFactory;
 import trello.pages.HeaderPage;
 import trello.pages.LoginPage;
 
@@ -24,8 +24,9 @@ public class LoginTest extends BrowserFactory {
         Assert.assertTrue(new LoginPage().isLoggedOut());
     }
 
-    //todo create-delete board
-    //add board to favourites
+    //todo
+    //--create-delete board
+    //--add board to favourites
     //private-public
     //move cards
 
